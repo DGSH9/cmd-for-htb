@@ -1,0 +1,3 @@
+--- mysql -h 192.168.43.240 -u root -p Users              (used to connect the mysql server)
+       -select * from users;                               (to show all tables from users)
+       -
